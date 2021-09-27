@@ -97,7 +97,7 @@ textarea {
 
 
 html {
-  background-color: rgb(0, 129, 180);
+  background-color: rgb(245, 243, 125);
   height: 100%;
 }
 
@@ -108,28 +108,54 @@ body {
   height: 100%;
 }
 
+
+.hi, .bio {
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.bio {
+    margin-bottom: 2em;
+    border-bottom: 1px solid black;
+}
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: black;
   line-height: 1.5em;
   font-size: 1em;
   height: 200px;
   width: 30%;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 0 1em;
 }
 
-.div-2, .div-3 {
-    border-left: 1px solid lightgray;
+.div-1 {
+    padding-left: 0;   /*delete padding left of div-1 to left align with headings*/
+}
+
+.div-2, .div-3 {       /*separate lines between divs*/
+    border-left: 1px solid #595959;  
+}
+
+.social {
+    border-top: 1px solid black;
+    margin-top: 2em;
+}
+
+.social img {          /*resize and arrange social media icons*/
+    height: 2%;
+    width: 2%;
+    padding: 1em 1em 0 0;
 }
 
 
